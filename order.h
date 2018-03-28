@@ -2,8 +2,10 @@
 #define ORDER_H
 #include <vector>
 #include "item.h"
+#include "ObserverPattern/ObserverPattern.cpp"
 
-class order {
+class order: public Observer
+  {
   private:
     std::vector<item> itemList;
     double tax;
